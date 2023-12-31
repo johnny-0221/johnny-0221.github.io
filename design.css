@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+body{
+    position: relative;
+    margin: 0;
+    background-color: white;
+    top:100px;
+    z-index: 1;
+}
+/*ヘッダー*/
+header{
+    position: fixed;
+    background-color:antiquewhite;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+    text-align: center;
+}
+div#logo{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+span.each_g_manu{
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+span.each_g_manu:hover{
+    color:rgb(88, 88, 88);
+}
+span.home_link_text{
+    text-align: center;
+    line-height: 100%
+}
+/*openning 1.0*/
+.openning_v1{
+    width: 100%;
+    height: 80vh;
+    font-size:0;
+    
+}
+.v1_p{
+    display: inline-block;
+    color: black;
+    background-color: rgb(199, 235, 235);
+    width: calc(100% / 3);
+    height: 100%;
+    text-align: center;
+}
+.v1_p:hover{
+    background-color: rgb(176, 223, 223);
+}
+.v1_p p{
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 30%;
+}
+/*小見出しの装飾*/
+.small_part_title{
+    width:fit-content;
+    border-bottom: solid 1px black;
+}
+.mini_part_title{
+    font-weight: 600;
+}
+/*リンクの装飾*/
+.link{
+    width:fit-content;
+    font-size: 18px;
+    color: grey;
+    border-bottom: solid 1px grey;
+}
+a{
+    text-decoration: none;
+}
+/*ブログ記事一覧用*/
+.article_view_line{
+    height:fit-content;
+    text-align: left;
+}
+/*記事ボックス*/
+.article_view{
+    display: inline-block;
+    vertical-align:top;
+    /*枠*/
+    border: solid 3px black;
+    border-radius: 2%;
+    /*大きさ*/
+    max-width: 200px;
+    width: 25%;
+    /*余白*/
+    margin: 1%;
+    /*影*/
+    box-shadow: 4px 4px black;
+}
+.article_view_sumnail{
+    max-height: fit-content;
+}
+.article_view_sumnail img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.article_view_title{
+    max-width: 100%;
+    max-height: 100%;
+    overflow-wrap: break-word;
+    text-align: center;
+    color:black;
+}
+/*箇条書き*/
+ul,ol{
+    width: fit-content;
+    background-color: aliceblue;
+    border-top: solid black;
+    border-bottom: solid black;
+}
+/*SNSリンク用*/
+#x{
+    width: 30px;
+    height: 30px;
+}
