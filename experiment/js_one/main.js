@@ -1,6 +1,5 @@
 education=false
 twins=false
-ejej=false
 edu=true
 //教育死刑メーカー
 if(education){
@@ -21,16 +20,4 @@ if(twins){
 function Yokatozo(word){
     return(word+"します！！いや..."+word+"させます!!"+word+"してほしい！！！！");
 }
-//ejejメーカー
-if(ejej){
-    document.write("はい！じゃあ始めまーす！日直！");
-    document.write("お願いしまーす！");
-    document.write("今日は......");
-    document.write(get_ani());
-    document.write("！！！")
-    document.write("じゃあ今日のsmall-topicのテーーマは...");
-    document.write();
-    function get_ani(){
-        
-    }
-};
+
