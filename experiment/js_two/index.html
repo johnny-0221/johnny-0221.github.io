@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Johnny.com</title>
+    <link rel="stylesheet" href="../../design.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            Johnny
+        </div>
+        <div id="g_manu">
+            <a href="../../index.html">
+                <span class="each_g_manu">
+                        Home
+                </span>
+            </a>
+            <a href="../../about/index.html">
+                <span class="each_g_manu">
+                        About
+                </span>
+            </a>
+            <a href="../../works/index.html">
+                <span class="each_g_manu">
+                Works
+                </span>
+            </a>
+            <a href="../../blog/index.html">
+                <span class="each_g_manu">
+                Blog
+                </span>
+            </a>
+            <a href="../index.html">
+                <span class="each_g_manu">
+                        Experiment
+                </span>
+            </a>
+        </div>
+    </header>
+    <p id="name1">apple</p>
+    <p id="name2">banana</p>
+    <button onclick="getElement()">appleの要素を取得してログへ出力</button>
+    <button id="b2">bananaのスタイルを変更</button>
+   <script>
+    getElement=function(){
+        const element=document.getElementById("name1")
+        console.log("name1:"+element.textContent)
+    }
+    const name2=document.getElementById("name2")
+    const button2=document.getElementById("b2")
+    button2.addEventListener("mousedown",function(){
+        name2.style.fontSize="150%"
+    })
+    button2.addEventListener("mouseup",function(){
+        name2.style.fontSize="200%"
+    })
+    button2.addEventListener("click",function(){
+        name2.style.color="yellow"
+    })    
+    
+   </script>
+</body>
+</html>
